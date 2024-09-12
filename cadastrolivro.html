@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <title>Cadastro de Livros</title>
+    <link rel="stylesheet" href="styleslivro.css">
+    <script>
+        function exibirAlerta(event) {
+            alert("Dados enviados com sucesso!");
+        }
+    </script>
+    <script>
+        function redirecionarParaOutraPagina() {
+            window.location.href = "index 4.html";
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h2>Cadastro de Livros</h2>
+        <form action="#" method="POST" onsubmit="exibirAlerta(event)">
+            <div class="form-group">
+                <label for="Código">Código:</label>
+                <input type="RM" id="Código" name="Código" required>
+            </div>
+            <div class="form-group">
+                <label for="name">Título:</label>
+                <input type="text" id="Título" name="Título" required>
+            </div>
+            <div class="form-group">
+                <label for="autores">Autor:</label>
+                <input type="text" id="Nome" name="autores" required>
+            </div>
+            <div class="form-group">
+                <label for="isbn">ISBN:</label>
+                <input type="text" id="RM" name="isbn" required>
+            </div>
+            <div class="form-group">
+                <label for="editora">Editora:</label>
+                <input type="text" id="editora" name="editora" required>
+           <br>
+            </div>
+            <div class="form-group">
+                <label for="data de publicacao">Data de Publicação:</label>
+                <input type="date" id="Data de Publicação" name="Data de Publicação" required>
+        </div>
+        <div class="form-group">
+            <label for="genero">Genêro/Categoria:</label>
+            <input type="text" id="genero" name="genero" required>
+       <br>
+    </div>
+    <div class="form-group">
+        <label for="numero de paginas">Número de páginas:</label>
+        <input type="text" id="numero de páginas" name="numero de paginas" required>
+   <br>
+</div>
+<div class="form-group">
+    <label for="Idioma">Idioma:</label>
+    <input type="text" id="Idioma" name="Idioma" required>
+<br>
+</div>
+<div class="form-group">
+    <label for="Formato">Formato:</label>
+    <input type="text" id="Formato" name="Formato" required>
+<br>
+<br>
+            <div class="form-group">
+                <label type=text for="Resumo">Resumo:</label>  
+                <textarea name="Resumo" 
+                cols="50" rouls="50"></textarea required><br><br>
+            </div>
+            <div class="form-group">
+		<button type="button" onclick="redirecionarParaOutraPagina()">Voltar</button>
+                <button type="submit">Cadastrar</button>
+		<button type="reset">Cancelar</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
